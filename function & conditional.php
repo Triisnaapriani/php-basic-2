@@ -49,12 +49,24 @@ Output: ludba
 */
 
 // Code function di sini 
+function reverse($string1) {
+    $length = strlen($string1);
+    $output = '';
+    for ($i = ($length - 1); $i >= 0; $i--) {
+        $output .= $string1[$i];
+    }
+    return $output;
+}
 
+function reverseString($string2) {
+    $string = reverse($string2);
+    echo $string ."<br>";
+}
 
 // Hapus komentar di bawah ini untuk jalankan Code
- /reverseString("abduh");
- /reverseString("Bootcamp");
- /reverseString("We Are JCC Developers");
+ reverseString("abduh");
+ reverseString("Bootcamp");
+ reverseString("We Are JCC Developers");
 
 echo "<br>";
 
